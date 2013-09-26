@@ -1,0 +1,49 @@
+#magazine-content {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1200;
+  opacity: 1;
+  box-sizing: border-box;
+}
+
+#magazine-content * {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+ul.magazine-navigation,
+ul.swipe {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+
+ul.swipe {
+  height: 100%;
+}
+
+ul.swipe:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+ul.swipe li.swipe-pane {
+  margin: 0;
+  background-size: cover;
+  overflow: hidden;
+  float: left;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+}

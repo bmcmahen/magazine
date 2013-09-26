@@ -1,0 +1,67 @@
+<html>
+<head>
+  <title></title>
+  <link href='build/build.css' rel='stylesheet'>
+</head>
+<body>
+
+  <style>
+    #background1 {
+      background-image: url('sample_images/inst3.jpg');
+      background-size: cover;
+    }
+    #background2 {
+      background-image: url('sample_images/inst10.jpg');
+      background-size: cover;
+    }
+  </style>
+
+
+<div id='magazine'>
+  <div id='magazine-content'>
+    <ul class='swipe'>
+
+      <li id='background2' class='swipe-pane'>
+        <div class='left-third full white-background'>
+          <div class='container'>
+        <h1> Institutions</h1>
+        <p> Lorem ipsum Dolore ut in exercitation aliqua dolor id pariatur deserunt nulla anim nulla id Ut amet eu ad pariatur nostrud in ut cupidatat ut aliquip dolore nostrud nostrud tempor qui velit aliquip aute quis ullamco culpa veniam do anim esse dolor dolor ullamco culpa ut laborum consequat id esse officia sed aliqua officia amet in sint veniam ut. </p>
+        </div>
+      </div>
+      </li>
+
+      <li class='swipe-pane'>
+        <div class='right'>
+          <div class='container'>
+            <div class='content center'>
+              <p> Lorem ipsum Dolore ut in exercitation aliqua dolor id pariatur deserunt nulla anim nulla id Ut amet eu ad pariatur nostrud in ut cupidatat ut aliquip dolore nostrud nostrud tempor qui velit aliquip aute quis ullamco culpa veniam do anim esse dolor dolor ullamco culpa ut laborum consequat id esse officia sed aliqua officia amet in sint veniam ut in magna irure id dolor in ullamco labore pariatur nisi Duis dolore non qui anim mollit in eiusmod sit anim fugiat occaecat eu ad sed dolore sit laboris cupidatat occaecat Ut dolor eiusmod enim laboris consectetur dolor in aute sunt exercitation culpa in quis in velit proident aute qui proident pariatur enim et deserunt in et exercitation ex do Excepteur veniam dolor nostrud officia sint sed qui magna incididunt velit.</p>
+            </div>
+          </div>
+        </div>
+        <div class='left full'>
+          <div class='container'>
+            <div id='background1' class='content'>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class='swipe-pane'>
+        <p> hi 3 </p>
+      </li>
+
+    </ul>
+    <ul class='magazine-navigation'>
+    </ul>
+  </div>
+</div>
+
+<script src='build/build.js'></script>
+<script>
+var Magazine = require('magazine');
+var tour = new Magazine(document.getElementById('magazine'));
+
+</script>
+
+</body>
+</html>

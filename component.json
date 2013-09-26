@@ -1,0 +1,32 @@
+{
+  "name": "magazine",
+  "repo": "bmcmahen/magazine",
+  "description": "create a horizontal, swipeable magazine layout",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/swipe": "*",
+    "component/events": "*",
+    "component/css": "*",
+    "component/each": "*",
+    "component/classes": "*",
+    "component/map": "*",
+    "anthonyshort/emitter-manager": "*",
+    "yields/k": "*",
+    "component/emitter": "*",
+    "eugenicsarchivesca/background-video": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "lib/index.js",
+    "lib/buttons.js"
+  ],
+  "styles": [
+    "styles/magazine.css",
+    "styles/layouts.css",
+    "styles/buttons.css"
+  ]
+}
