@@ -22,7 +22,8 @@
   "scripts": [
     "index.js",
     "lib/index.js",
-    "lib/buttons.js"
+    "lib/buttons.js",
+    "lib/panes.js"
   ],
   "styles": [
     "styles/magazine.css",

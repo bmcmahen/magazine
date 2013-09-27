@@ -44,6 +44,5 @@ ul.swipe li.swipe-pane {
   overflow: hidden;
   float: left;
   height: 100%;
-  padding: 20px;
   position: relative;
 }
