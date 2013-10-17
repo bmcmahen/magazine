@@ -7,15 +7,44 @@ Default grid size is 900 x 400
 .white-background {
   background: white;
   background: rgba(255,255,255,0.95);
-  padding: 15px;
+  padding: 0 15px;
 }
 
+p.white-background {
+  padding: 15px;
+  border-radius: 7px;
+}
+
+p {
+  line-height: 25px;
+}
+
+quote {
+  font-style: italic;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: 100;
+  font-family: helvetica, arial;
+}
+
+.span-two {
+  width: 200%;
+}
+
+.span-one-half {
+  width: 150%;
+}
+
+.span-three-quarters {
+  width: 166.666666%;
+}
+/*
 .cols {
   -webkit-column-width: 19em;
   -moz-column-width: 19em;
   column-width: 19em;
   column-gap:40px;
-  -moz-column-gap:40px; /* Firefox */
+  -moz-column-gap:40px;
   -webkit-column-gap:40px;
  }
 
@@ -127,4 +156,4 @@ p {
   right: 0;
   top: 0;
   overflow: auto;
-}
+}*/

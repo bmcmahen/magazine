@@ -2,12 +2,13 @@
 <head>
   <title></title>
   <link href='build/build.css' rel='stylesheet'>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
 
   <style>
     #background1 {
-      background-image: url('sample_images/inst3.jpg');
+      background-image: url('sample_images/Artifact_Flashing_Light_Exhibit.jpg');
       background-size: cover;
     }
     #background2 {
@@ -15,15 +16,224 @@
       background-size: cover;
     }
 
-    h2 {
-      color: white;
-      font-family: 'helvetica';
-      font-size: 60px;
-      width: auto;
-      font-weight: 100;
-      padding-left: 20px;
-      background: rgba(0, 0, 0, 0.9);
+    #background3 {
+      background-image: url('sample_images/inst8.jpg');
+      background-size: cover;
     }
+     #background4 {
+      background-image: url('sample_images/inst6.jpg');
+      background-size: cover;
+      background-position-y: -330px;
+    }
+
+    #ponoka1 {
+      background-image: url('sample_images/PonokaMentalHosptialMainBuildingA10249_1930s_ProvincialArchivesAlberta.png');
+      background-size: cover;
+    }
+
+    h2 {
+      color: rgb(81, 83, 83);
+      font-family: 'helvetica', arial, sans-serif;
+      font-size: 25px;
+      line-height: 32px;
+      text-transform: uppercase;
+      width: auto;
+      font-weight: 600;
+      border-bottom: 2px solid;
+      margin-top: 0;
+      padding: 25px;
+    }
+
+    .magazine-navigation li a {
+      font-family: 'helvetica';
+      font-weight: 500;
+    }
+
+    p.sub-description {
+      line-height: 17px;
+      color: #888;
+      font-size: 12px;
+      font-family: 'helvetica', arial;
+      text-indent: 0;
+      padding-bottom: 10px;
+    }
+
+    .white-background.no-padding {
+      padding: 0;
+    }
+
+    .white-background.rounded {
+      border-radius: 7px;
+      padding: 25px;
+    }
+
+    .white-background.no-transparency {
+      background-color: white;
+    }
+
+    .padded {
+      padding: 0 25px;
+    }
+
+    .no-padding-top {
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .green-background {
+      background-color: rgb(231, 245, 237);
+    }
+
+    .blue-background {
+      background-color: blue;
+    }
+
+    .yellow-background {
+      background-color: yellow;
+    }
+
+    span.caption {
+      line-height: 17px;
+      display: block;
+      padding: 15px;
+      color: #D5D5D5;
+      font-size: 12px;
+      font-family: 'helvetica', arial;
+    }
+
+    .align-right {
+      text-align: right;
+      padding-right: 12px;
+    }
+
+    .scroll {
+      overflow-y: auto;
+      padding-bottom: 15px  !important;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    ul.magazine-navigation {
+      width: 400px;
+      margin-left: -200px;
+      left: 50%;
+    }
+
+    a.next {
+      font-family: helvetica, arial, sans-serif;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      color: rgba(118, 129, 126, 1);
+      padding: 5px 8px;
+      background: rgb(0, 194, 255);
+      background: rgba(0, 194, 255, 0.3);
+    }
+
+    a.next:hover {
+      background: rgba(0, 194, 255, 0.56);
+    }
+
+    a.next:active {
+      color: black;
+    }
+
+    span.divider {
+      color: #999;
+      font-size: 11px;
+      padding: 0 5px;
+    }
+
+    p {
+      text-align: justify;
+      text-indent: 1.5em;
+      margin: 5px 0;
+    }
+
+    p.first {
+      text-indent: 0;
+      margin-top: 0;
+    }
+
+    .drop-caps {
+      font-size: 5.5em;
+      padding-right: 10px;
+      line-height: 75px;
+      font-weight: bold;
+      color: #3bb2d0;
+      float: left;
+      font-family: 'helvetica', arial, sans-serif;
+    }
+
+    .directional-links {
+      padding: 15px 0;
+      padding-bottom: 0;
+      text-align: center;
+    }
+
+    .white-background {
+      padding: 25px;
+    }
+
+    .caption {
+      font-family: 'helvetica', arial, sans-serif;
+      font-size: 12px;
+      color: #888;
+      padding: 10px;
+      line-height: 18px;
+      text-indent: 0;
+    }
+
+    .active .fade-in-caption {
+      opacity: 1;
+
+    }
+
+    .start-video {
+      font-family: helvetica, arial, sans-serif;
+      font-size: 13px;
+      background: white;
+      margin: 5px;
+      padding: 5px;
+      border-radius: 3px;
+      display: block;
+    }
+
+    h3 {
+      color: white;
+      padding-left: 8px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 19px;
+      font-family: helvetica, arial, sans-serif;
+  }
+
+  .black-background {
+    background: black;
+    background: rgba(0, 0, 0, 0.60);
+  }
+
+  .start-video .icon-play-circle {
+    font-size: 35px;
+    float: left;
+    padding-right: 5px;
+  }
+
+  .start-video:hover {
+    background: #ddd;
+    cursor: pointer;
+  }
+
+  .cf:before,
+  .cf:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+  }
+
+  .cf:after {
+      clear: both;
+  }
+
+
   </style>
 
 
@@ -31,39 +241,138 @@
   <div id='magazine-content'>
     <ul class='swipe'>
 
-      <li id='background2' class='swipe-pane'>
-        <div class='left-third full white-background'>
-          <div class='container'>
-        <h1> Institutions</h1>
-        <p> Lorem ipsum Dolore ut in exercitation aliqua dolor id pariatur deserunt nulla anim nulla id Ut amet eu ad pariatur nostrud in ut cupidatat ut aliquip dolore nostrud nostrud tempor qui velit aliquip aute quis ullamco culpa veniam do anim esse dolor dolor ullamco culpa ut laborum consequat id esse officia sed aliqua officia amet in sint veniam ut. </p>
-        <a href='#' data-link='next'>Next</a>
-        </div>
-      </div>
+      <li class='swipe-pane'>
+        <div class='left-0 width-12 height-12 zoom-in' id='background2'></div>
+        <div class='left-0 width-4 height-12 white-background scroll no-padding'>
+          <h2>Roots of Institutionalization</h2>
+          <div class='padded'>
+            <p class='first'> <span class='drop-caps'>D</span>uring the early 20th century, Canadian farmers used early genetic science to increase food production by taking measures to ensure that only animals and plants with the most desirable characteristics reproduced more than those with less desirable features. This selective breeding occurred throughout North America and Europe, revolutionizing agriculture. </p>
+            <p> Concurrent with these advances in agriculture through the use of scientific knowledge, a movement emerged that sought to promote the health and well-being of human populations in light of scientific advances. Meanwhile, the eugenics movement emerged.  Some of the proponents of eugenics believed that societies could speed up human evolution by using artificial selection, which had been successful in agriculture, to bypass natural selection.  Others believed that "human stock" needed to be tended much as plant resources and livestock needed to be regulated to ensure a healthy future for human populations.  A common background belief was that scientific means were available for detecting and eliminating undesirable traits in people.</p>
+
+            <div class='directional-links'>
+              <a href='#' class='next' data-link='next'>Next</a>
+            </div>
+          </div>
+       </div>
+       <div class='left-9 width-3 height-1 caption fade-in-down' style='text-align: right;'>
+        Lorem ipsum Eu laborum enim cupidatat id incididunt deserunt incididunt irure quis quis sed id nulla ad non culpa ea aute in.
+       </div>
       </li>
 
       <li class='swipe-pane'>
-        <div class='right'>
-          <div class='container'>
-            <div class='content center'>
-              <p> Lorem ipsum Dolore ut in exercitation aliqua dolor id pariatur deserunt nulla anim nulla id Ut amet eu ad pariatur nostrud in ut cupidatat ut aliquip dolore nostrud nostrud tempor qui velit aliquip aute quis ullamco culpa veniam do anim esse dolor dolor ullamco culpa ut laborum consequat id esse officia sed aliqua officia amet in sint veniam ut in magna irure id dolor in ullamco labore pariatur nisi Duis dolore non qui anim mollit in eiusmod sit anim fugiat occaecat eu ad sed dolore sit laboris cupidatat occaecat Ut dolor eiusmod enim laboris consectetur dolor in aute sunt exercitation culpa in quis in velit proident aute qui proident pariatur enim et deserunt in et exercitation ex do Excepteur veniam dolor nostrud officia sint sed qui magna incididunt velit.</p>
-              <a href='#' data-link='previous'>Previous</a> |
-              <a href='#' data-link='next'>Next </a>
+        <div class='left-0 width-12 height-12 move-down-more' style='background-image: url("sample_images/four-types.jpg"); background-size: cover;'></div>
+        <div class='left-0 width-3 height-2 top-0 caption fade-in-right'>
+          <div style='background: white; padding: 10px;'>
+          Intellectual disabilities were viewed as particularly undesirable traits, so governments throughout the Western world took steps to limit reproduction among people with low IQs and others deemed "mentally defective."
+        </div>
+       </div>
+     </li>
+
+
+      <li class='swipe-pane'>
+        <div class='left-0 width-12 height-12 zoom-out-extra' id='background1'></div>
+
+        <div class='left-1 width-3 height-2 top-8 caption fade-in-right'>
+          <div style='background: white; padding: 10px;'>
+        Such attempts to improve the human race often took the form of institutionalization, sexual sterilization or both. Sterilization, as it is discussed in this case study, does not refer to hygiene, but rather to surgery to remove a person's reproductive capacity.
+      </div>
+       </div>
+
+      </li>
+
+      <li class='swipe-pane'>
+        <div class='left-0 width-12 height-12 move-down-more' style='background-image: url("sample_images/sterilization-act.jpg"); background-size: cover;'></div>
+        <div class='left-0 width-3 height-2 top-0 caption fade-in-right'>
+          <div style='background: white; padding: 10px;'>
+        Most large-scale institutionalization of "mental defectives" occurred in Alberta between 1918 and 1972. During this time, more than 2,800 Albertans were sterilized, starting with the introduction of Alberta's <em> Sexual Sterilization Act of 1928</em>.
+        </div>
+       </div>
+     </li>
+
+      <li class='swipe-pane' style='overflow: visible;'>
+        <div class='left-0 height-12 span-three-quarters' style='overflow: hidden;'>
+          <div class='grid-container zoom-out' id='background4'></div>
+        </div>
+         <div class='left-0 width-6 height-12'>
+           <div class='grid-container'>
+            <div class='fixed-block v-centered h-centered' style='margin-top: -290px;'>
+              <p> While institutionalization and sterilization were closely linked, eugenic ideals were not the sole motivation for removing disabled children from their homes and placing them in institutions. As Alberta became increasingly urbanized and industrialized, parents of children with developmental disabilities faced new challenges. Before industrialization, families were larger and more self-sufficient. As more people began to work outside the home in urban centres, parents were less able to rely on childcare support from family members and neighbours. In fact, more than half of the admission applications to the Red Deer <a href='/discover/institutions/map/517da50e9786fa0a73000001'>Provincial Training School</a> for "mental defectives" were filed by family members of the residents.  </p>
             </div>
           </div>
         </div>
-        <div class='left full'>
-          <div class='container'>
-            <div id='background1' class='content'>
+        <div class='left-6 width-6 height-12'>
+          <div class='grid-container'>
+            <div class='fixed-block v-centered h-centered' style='margin-top: -290px;'>
+              <p> There are many accounts of overcrowding, poor sanitation and abuse within the walls of <a href='/discover/institutions/map/'>Alberta institutions</a>. Additionally, ethnic minorities, including Aboriginal children, were more likely to be institutionalized than children of British descent. Visits with family members were rare and parents were seldom able to monitor the quality of care their children received. People with disabilities often remained in institutions as adults, sometimes living away from the community for decades.  </p>
+              <div class='directional-links'>
+                <a href='#' class='next' data-link='previous'>Previous</a> <span class='divider'>|</span>
+                <a href='#' class='next' data-link='next'>Next </a>
+              </div>
             </div>
           </div>
         </div>
       </li>
 
-      <li class='swipe-pane' data-background-video='sample_images/vid.mp4'>
-        <div class='left full'>
-          <h2> This is a Video </h2>
+      <li class='swipe-pane'>
+        <div class='left-8 width-4 height-12 white-background no-padding scroll'>
+          <h2> Personal Histories </h2>
+          <div class='padded'>
+           <p class='sub-description'>Dianne Hanchiruk spent 16 years living at St. Joseph's Convent in Mundare, Alberta followed by three and a half years Red Deer's Michener Centre for people with developmental disabilities. After being discharged from the Centre, she moved to Vancouver, where she has spent most of her life working in long-term care facilities.<p>
+            <p class='first'> <span class='drop-caps'>I</span>was born [to an unwed mother and she] put me in an orphanage. I was put in the orphanage for 16 years and I was brought up by the Ukrainian Sisters. I found the Sisters were very good and that. They were very disciplined and there was about 100 of us children, boys and girls. Yes, I did get strapped a few times, but it never hurt me, you know? In the '50s, that's what used to be done, but they were very good and kind and I was well treated, well fed ... </p>
+            <p>  We helped the Sisters. We helped clean the place and they taught us how to do different jobs and that (at) the orphanage. </p>
+              <p> I went to school and I went up to Grade 8 education. And then I was put ... in three different foster homes. One was when I was 12 years old, but it didn't work out too good so I was put back in the orphanage. Then I was put in a foster home in Vegreville, Alberta, and the foster parents were very good to me. Then I was put in another foster home in Riley, Alberta. They were very good ... And just a few years ago my foster dad died and I liked him a lot so ... to this day I still keep in touch with the children and that. I'll never forget what they did. And then Welfare came...</p>
+              <p>They said I was going to Red Deer, Alberta, and I was going to Training School, and I thought, "Oh, that's fantastic. I'm going to really learn something." ... </p>
+          </div>
+            <div class='directional-links'>
+                <a href='#' class='next' data-link='previous'>Previous</a> <span class='divider'>|</span>
+                <a href='#' class='next' data-link='next'>Next </a>
+              </div>
+          </div>
+      </li>
+
+
+      <li class="swipe-pane">
+        <div class='left-4 width-9 height-12 zoom-out-extra' id='ponoka1'></div>
+        <div class="left-4 width-3 top-0 height-1 caption fade-in-down">Ponoka Mental Hospital. Provincial Archives of Alberta, 1923.
         </div>
-    </p>
+
+      <div class="left-0 width-4 height-12 white-background no-transparency scroll">
+          <p class='no-padding-top'>Well, I got quite a big surprise as soon as I was admitted in. They stripped us and we had to take some shower. They sprayed some stuff [on] us. Something to get rid of bugs. Yeah, lice ... so we were sprayed with some stuff and we were all stripped naked and [they] gave us a bath. I wasn't too happy with what they did, but I guess that's what they did to everybody.</p>
+          <p>They had dresses for all of us, but [they] belonged to the institution. All our possessions were taken away and we were all locked up ... I thought I was going to school, but we were treated like little kids. Supervised and that, and the doors were locked and that. I was in my twenties ... my early twenties. </p>
+          <p> ... Welfare just put me there and said it was a Training School and that's it. And then they said that we're going to get an operation and I said, "What kind?" I didn't quite understand what they meant by sterilization or anything. They never went into detail ... They sterilized us and that was that.  Everybody had to go through it. It was routine. [They said], "You're going to get your appendix out ..." or something.</p>
+
+<p>[After sterilization] they let us have more freedom with ourselves ... so I really got involved with sports and that and I really enjoyed it. I enjoyed skating, swimming, hiking, so there's good and bad. I didn't care for the food there. The food wasn't so great.</p>
+<p>There was eight of us in one room, so we had no privacy. [We would] get up in the mornings, have breakfast, watch TV, or go for walks, but it was mostly just the same routine ... And then I got transferred to Deerhome [Michener's facility for adults with disabilities] and there was just four to a room so I had a bit of privacy there ... they let us have our own clothes because they said [we were] a High Grade ... they had Low Grades, High Grades and (I was) the highest grade so I kind of felt good. Gee, that's something. Then from being at Deerhome for three and a half years, we ended up being rescued by Ann [Hughson] and Reg Peters, and Dr. [Roy] Brown, the whole works.</p>
+         <div class='directional-links'>
+            <a href='#' class='next' data-link='previous'>Previous</a> <span class='divider'>|</span>
+            <a href='#' class='next' data-link='next'>Next </a>
+        </div>
+      </div>
+
+      <div class='left-6 top-9 width-5 height-2' style='color: white;'>
+        <quote> And then they said that we're going to get an operation and I said, "What kind?"</quote>
+      </div>
+      </li>
+
+      <li class='swipe-pane' data-background-video='sample_images/Glen.mp4'>
+        <div>
+          <h1> Leilani Muir </h1>
+          <a href='#' class='paused' data-toggle-playback='true'>Play</a>
+        </div>
+      </li>
+      <li class='swipe-pane' data-background-video='sample_images/sandra1.m4v'>
+        <div class='left-0 width-3 height-6' style='padding-left: 15px;'>
+          <h3 class='fade-in-down'>Sandra Anderson</h3>
+          <p class='caption black-background fade-in-right'>Dianne Hanchiruk spent 16 years living at St. Joseph's Convent in Mundare, Alberta followed by three and a half years Red Deer's Michener Centre for people with developmental disabilities. After being discharged from the Centre, she moved to Vancouver, where she has spent most of her life working in long-term care facilities.</p>
+          <a class='start-video cf fade-in-right' data-play-video='sample_images/sandra1.m4v' data-popup-video='true'><i class='icon-play-circle'></i>What were the different types of people at the institutions?</a>
+          <a class='start-video cf fade-in-right' data-play-video='sample_images/sandra2.m4v'><i class='icon-play-circle'></i>What were the things done at the institutions?</a>
+          <a class='start-video cf fade-in-right' data-play-video='sample_images/sandra3.m4v'><i class='icon-play-circle'></i>How were the U of A involved?</a>
+        </div>
+
+
+      </li>
+
+      <li class='swipe-pane' data-background-video='sample_images/leaves-high.m4v' data-autoplay='true' data-video-loop='true'>
       </li>
 
     </ul>

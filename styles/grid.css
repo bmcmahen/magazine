@@ -1,0 +1,139 @@
+.grid-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+[class^='left-'],
+[class^='top-'] {
+  position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.left-0 { left: 0; }
+.left-1 { left: 8.33333333333333%; }
+.left-2 { left: 16.6666666666666%; }
+.left-3 { left: 24.9999999999999%; }
+.left-4 { left: 33.3333333333333%; }
+.left-5 { left: 41.6666666666666%; }
+.left-6 { left: 49.9999999999999%; }
+.left-7 { left: 58.3333333333333%; }
+.left-8 { left: 66.6666666666666%; }
+.left-9 { left: 74.9999999999999%; }
+.left-10 { left: 83.3333333333333%; }
+.left-11 { left: 91.6666666666666%; }
+
+.top-0 { top: 0; }
+.top-1 { top: 8.33333333333333%; }
+.top-2 { top: 16.6666666666666%; }
+.top-3 { top: 24.9999999999999%; }
+.top-4 { top: 33.3333333333333%; }
+.top-5 { top: 41.6666666666666%; }
+.top-6 { top: 49.9999999999999%; }
+.top-7 { top: 58.3333333333333%; }
+.top-8 { top: 66.6666666666666%; }
+.top-9 { top: 74.9999999999999%; }
+.top-10 { top: 83.3333333333333%; }
+.top-11 { top: 91.6666666666666%; }
+
+.width-1 { width: 8.33333333333333%; }
+.width-2 { width: 16.6666666666666%; }
+.width-3 { width: 24.9999999999999%; }
+.width-4 { width: 33.3333333333333%; }
+.width-5 { width: 41.6666666666666%; }
+.width-6 { width: 49.9999999999999%; }
+.width-7 { width: 58.3333333333333%; }
+.width-8 { width: 66.6666666666666%; }
+.width-9 { width: 74.9999999999999%; }
+.width-10 { width: 83.3333333333333%; }
+.width-11 { width: 91.6666666666666%; }
+.width-12 { width: 100%; }
+
+.height-1 { height: 8.33333333333333%; }
+.height-2 { height: 16.6666666666666%; }
+.height-3 { height: 24.9999999999999%; }
+.height-4 { height: 33.3333333333333%; }
+.height-5 { height: 41.6666666666666%; }
+.height-6 { height: 49.9999999999999%; }
+.height-7 { height: 58.3333333333333%; }
+.height-8 { height: 66.6666666666666%; }
+.height-9 { height: 74.9999999999999%; }
+.height-10 { height: 83.3333333333333%; }
+.height-11 { height: 91.6666666666666%; }
+.height-12 { height: 100%; }
+
+
+.min-height-1 { min-height: 8.33333333333333%; }
+.min-height-2 { min-height: 16.6666666666666%; }
+.min-height-3 { min-height: 24.9999999999999%; }
+.min-height-4 { min-height: 33.3333333333333%; }
+.min-height-5 { min-height: 41.6666666666666%; }
+.min-height-6 { min-height: 49.9999999999999%; }
+.min-height-7 { min-height: 58.3333333333333%; }
+.min-height-8 { min-height: 66.6666666666666%; }
+.min-height-9 { min-height: 74.9999999999999%; }
+.min-height-10 { min-height: 83.3333333333333%; }
+.min-height-11 { min-height: 91.6666666666666%; }
+.min-height-12 { min-height: 100%; }
+
+/*  Fixed Block Sizes
+- These are useful for when you don't want the block size to change
+when resizing windows, working with different resolutions, etc., such
+as when working with blocks of text.
+- XXX make these responsive?
+*/
+
+.fixed-block {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+}
+
+.fixed-block.v-centered {
+  top: 50%;
+  margin-top: -200px;
+}
+
+.fixed-block.h-centered {
+  left: 50%;
+  margin-left: -200px;
+}
+
+.fixed-block.wide {
+  width: 900px;
+}
+
+.fixed-block.wide.h-centered {
+  margin-left: -450px;
+}
+
+.fixed-block.narrow {
+  width: 200px;
+}
+
+.fixed-block.narrow.h-centered {
+  margin-left: -100px;
+}
+
+.fixed-block.tall {
+  height: 600px;
+}
+
+.fixed-block.tall.v-centered {
+  margin-top: -300px;
+}
+
+.fixed-block.short {
+  height: 200px;
+}
+
+.fixed-block.short.v-centered {
+  margin-top: -100px;
+}
+
+

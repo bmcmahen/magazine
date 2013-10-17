@@ -14,7 +14,8 @@
     "anthonyshort/emitter-manager": "*",
     "yields/k": "*",
     "component/emitter": "*",
-    "eugenicsarchivesca/background-video": "*"
+    "eugenicsarchivesca/background-video": "*",
+    "bmcmahen/popup-video": "*"
   },
   "development": {},
   "license": "MIT",
@@ -28,6 +29,9 @@
   "styles": [
     "styles/magazine.css",
     "styles/layouts.css",
-    "styles/buttons.css"
-  ]
+    "styles/buttons.css",
+    "styles/grid.css",
+    "styles/animations.css"
+  ],
+  "remotes": []
 }

@@ -13,6 +13,10 @@
 
   Coming soon...
 
+## Styles
+
+  * [magazine-layout](https://github.com/bmcmahen/magazine-layout) - A basic absolutely-positioned grid system that helps to create magazine.js based layouts.
+
 ## Plugins
 
   * [magazine-router](https://github.com/bmcmahen/magazine-router) - A client-side router for your magazine.

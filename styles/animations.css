@@ -1,0 +1,107 @@
+.zoom-in {
+  -webkit-transition: -webkit-transform 10s ease-out;
+  -moz-transition: -moz-transform 10s ease-out;
+  -ms-transition: -ms-transform 10s ease-out;
+  transition: transform 10s ease-out;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.active .zoom-in {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.zoom-out {
+  -webkit-transition: -webkit-transform 10s ease-out;
+  -moz-transition: -moz-transform 10s ease-out;
+  -ms-transition: -ms-transform 10s ease-out;
+  transition: transform 10s ease-out;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.active .zoom-out {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.zoom-in-extra {
+  -webkit-transition: -webkit-transform 10s ease-out;
+  -moz-transition: -moz-transform 10s ease-out;
+  -ms-transition: -ms-transform 10s ease-out;
+  transition: transform 10s ease-out;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.active .zoom-in-extra {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.zoom-out-extra {
+  -webkit-transition: -webkit-transform 10s ease-out;
+  -moz-transition: -moz-transform 10s ease-out;
+  -ms-transition: -ms-transform 10s ease-out;
+  transition: transform 10s ease-out;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.active .zoom-out-extra {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.move-down-more {
+  background-position-y: 0;
+  transition: background-position 30s linear;
+  -webkit-transition: background-position 30s linear;
+}
+
+.active .move-down-more {
+  background-position-y: -900;
+}
+
+.fade-in-right {
+  opacity: 0;
+  -webkit-transition: -webkit-transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.active .fade-in-right {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.fade-in-down {
+  opacity: 0;
+  -webkit-transition: -webkit-transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.active .fade-in-down {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
