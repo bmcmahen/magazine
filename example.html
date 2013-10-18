@@ -23,11 +23,10 @@
      #background4 {
       background-image: url('sample_images/inst6.jpg');
       background-size: cover;
-      background-position-y: -330px;
     }
 
     #ponoka1 {
-      background-image: url('sample_images/PonokaMentalHosptialMainBuildingA10249_1930s_ProvincialArchivesAlberta.png');
+      background-image: url('sample_images/ProvincialTrainingSchoolRedDeer1920_GlenbowArchives.png');
       background-size: cover;
     }
 
@@ -123,10 +122,10 @@
       text-decoration: none;
       font-size: 12px;
       font-weight: bold;
-      color: rgba(118, 129, 126, 1);
+      color: white;
       padding: 5px 8px;
       background: rgb(0, 194, 255);
-      background: rgba(0, 194, 255, 0.3);
+      background: rgba(0, 194, 255, 0.8);
     }
 
     a.next:hover {
@@ -179,6 +178,7 @@
       font-size: 12px;
       color: #888;
       padding: 10px;
+      border-radius: 3px;
       line-height: 18px;
       text-indent: 0;
     }
@@ -192,7 +192,7 @@
       font-family: helvetica, arial, sans-serif;
       font-size: 13px;
       background: white;
-      margin: 5px;
+      margin: 5px 0;
       padding: 5px;
       border-radius: 3px;
       display: block;
@@ -200,7 +200,6 @@
 
     h3 {
       color: white;
-      padding-left: 8px;
       margin-top: 30px;
       margin-bottom: 10px;
       font-size: 19px;
@@ -209,13 +208,14 @@
 
   .black-background {
     background: black;
-    background: rgba(0, 0, 0, 0.60);
+    background: rgba(0, 0, 0, 0.80);
   }
 
   .start-video .icon-play-circle {
     font-size: 35px;
     float: left;
     padding-right: 5px;
+    color: #049cdb;
   }
 
   .start-video:hover {
@@ -233,6 +233,32 @@
       clear: both;
   }
 
+  .hide-while-playing {
+    display: block;
+  }
+
+  .video-playing .hide-while-playing {
+    display: none;
+  }
+
+  .show-while-playing {
+    display: none;
+  }
+
+  .video-playing .show-while-playing {
+    display: block;
+  }
+
+  .quick-view img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .popup-video-container {
+    z-index: 5;
+  }
 
   </style>
 
@@ -249,7 +275,7 @@
             <p class='first'> <span class='drop-caps'>D</span>uring the early 20th century, Canadian farmers used early genetic science to increase food production by taking measures to ensure that only animals and plants with the most desirable characteristics reproduced more than those with less desirable features. This selective breeding occurred throughout North America and Europe, revolutionizing agriculture. </p>
             <p> Concurrent with these advances in agriculture through the use of scientific knowledge, a movement emerged that sought to promote the health and well-being of human populations in light of scientific advances. Meanwhile, the eugenics movement emerged.  Some of the proponents of eugenics believed that societies could speed up human evolution by using artificial selection, which had been successful in agriculture, to bypass natural selection.  Others believed that "human stock" needed to be tended much as plant resources and livestock needed to be regulated to ensure a healthy future for human populations.  A common background belief was that scientific means were available for detecting and eliminating undesirable traits in people.</p>
 
-            <div class='directional-links'>
+            <div class='directional-links' style='text-align: left;'>
               <a href='#' class='next' data-link='next'>Next</a>
             </div>
           </div>
@@ -265,6 +291,9 @@
           <div style='background: white; padding: 10px;'>
           Intellectual disabilities were viewed as particularly undesirable traits, so governments throughout the Western world took steps to limit reproduction among people with low IQs and others deemed "mentally defective."
         </div>
+        <div class='directional-links' style='text-align: left;'>
+              <a href='#' class='next' data-link='next'>Next</a>
+            </div>
        </div>
      </li>
 
@@ -275,23 +304,31 @@
         <div class='left-1 width-3 height-2 top-8 caption fade-in-right'>
           <div style='background: white; padding: 10px;'>
         Such attempts to improve the human race often took the form of institutionalization, sexual sterilization or both. Sterilization, as it is discussed in this case study, does not refer to hygiene, but rather to surgery to remove a person's reproductive capacity.
+
       </div>
+       <div class='directional-links' style='text-align: left;'>
+              <a href='#' class='next' data-link='next'>Next</a>
+            </div>
        </div>
 
       </li>
 
       <li class='swipe-pane'>
         <div class='left-0 width-12 height-12 move-down-more' style='background-image: url("sample_images/sterilization-act.jpg"); background-size: cover;'></div>
-        <div class='left-0 width-3 height-2 top-0 caption fade-in-right'>
+        <div class='left-0 width-3 height-2 top-0 caption fade-in-down'>
           <div style='background: white; padding: 10px;'>
         Most large-scale institutionalization of "mental defectives" occurred in Alberta between 1918 and 1972. During this time, more than 2,800 Albertans were sterilized, starting with the introduction of Alberta's <em> Sexual Sterilization Act of 1928</em>.
+
         </div>
+         <div class='directional-links' style='text-align: left;'>
+              <a href='#' class='next' data-link='next'>Next</a>
+            </div>
        </div>
      </li>
 
       <li class='swipe-pane' style='overflow: visible;'>
-        <div class='left-0 height-12 span-three-quarters' style='overflow: hidden;'>
-          <div class='grid-container zoom-out' id='background4'></div>
+        <div class='left-0 height-12 width-12' style='overflow: hidden;'>
+          <div class='grid-container' id='background4'></div>
         </div>
          <div class='left-0 width-6 height-12'>
            <div class='grid-container'>
@@ -313,7 +350,7 @@
         </div>
       </li>
 
-      <li class='swipe-pane'>
+      <li class='swipe-pane' data-background-video='sample_images/leaves-high.m4v' data-autoplay='true' data-video-loop='true'>
         <div class='left-8 width-4 height-12 white-background no-padding scroll'>
           <h2> Personal Histories </h2>
           <div class='padded'>
@@ -332,8 +369,8 @@
 
 
       <li class="swipe-pane">
-        <div class='left-4 width-9 height-12 zoom-out-extra' id='ponoka1'></div>
-        <div class="left-4 width-3 top-0 height-1 caption fade-in-down">Ponoka Mental Hospital. Provincial Archives of Alberta, 1923.
+        <div class='left-3 width-9 height-12 zoom-out-extra' id='ponoka1'></div>
+        <div class="left-4 width-3 top-0 height-1 caption fade-in-down">Provincial Training School, Red Deer, 1920. From the Glenbow Archives.
         </div>
 
       <div class="left-0 width-4 height-12 white-background no-transparency scroll">
@@ -354,25 +391,31 @@
       </div>
       </li>
 
-      <li class='swipe-pane' data-background-video='sample_images/Glen.mp4'>
-        <div>
-          <h1> Leilani Muir </h1>
-          <a href='#' class='paused' data-toggle-playback='true'>Play</a>
+      <li class='swipe-pane' data-background-video='sample_images/leilani-preview.m4v' data-autoplay='true' data-video-loop='true'>
+        <div class='left-9 width-3 height-6' style='padding-right: 15px;'>
+          <h3 class='fade-in-down'>Leilani Muir</h3>
+          <p class='caption black-background fade-in-left'>Leilani Muir was the first person to file a successful law suit against the Alberta government for wrongful sterilization under the Sexual Sterilization Act of Alberta. Her case led to the initiation of several other class action suits against the province for wrongful sterilization.</p>
+          <a class='start-video cf fade-in-left' data-play-video='sample_images/leilani.mp4' data-popup-video='true'><i class='icon-play-circle'></i>Leilani Tells her story, including her account of being at the Michener Center.</a>
+
         </div>
       </li>
-      <li class='swipe-pane' data-background-video='sample_images/sandra1.m4v'>
-        <div class='left-0 width-3 height-6' style='padding-left: 15px;'>
+
+      <li class='swipe-pane' data-background-video='sample_images/sandra-preview.m4v' data-autoplay='true' data-video-loop='true'>
+        <div class='left-0 width-3 height-6 hide-while-playing' style='padding-left: 15px;'>
           <h3 class='fade-in-down'>Sandra Anderson</h3>
-          <p class='caption black-background fade-in-right'>Dianne Hanchiruk spent 16 years living at St. Joseph's Convent in Mundare, Alberta followed by three and a half years Red Deer's Michener Centre for people with developmental disabilities. After being discharged from the Centre, she moved to Vancouver, where she has spent most of her life working in long-term care facilities.</p>
-          <a class='start-video cf fade-in-right' data-play-video='sample_images/sandra1.m4v' data-popup-video='true'><i class='icon-play-circle'></i>What were the different types of people at the institutions?</a>
-          <a class='start-video cf fade-in-right' data-play-video='sample_images/sandra2.m4v'><i class='icon-play-circle'></i>What were the things done at the institutions?</a>
-          <a class='start-video cf fade-in-right' data-play-video='sample_images/sandra3.m4v'><i class='icon-play-circle'></i>How were the U of A involved?</a>
+          <p class='caption black-background fade-in-right'>Sandra Anderson practiced law with Field Law, and was counsel for Leilani Muir and other sterilization victims in their claim against the Alberta Government.</p>
+          <a class='start-video cf fade-in-right' data-play-video='sample_images/sandra1.m4v'><i class='icon-play-circle'></i>On the range of people admitted to the Provincial Trailing School, including those who didn't belong there.</a>
+          <a class='start-video cf fade-in-right' data-play-video='sample_images/sandra2.m4v'><i class='icon-play-circle'></i>What other types of experiences in the institution -- those which went beyond that of sterilization -- stood out in your involvement in the Leilani Muir case?</a>
+          <a class='start-video cf fade-in-right' data-play-video='sample_images/sandra3.m4v'  data-popup-video='true'><i class='icon-play-circle'></i>On the role of the University of Alberta, and the support of Margaret Thompson in establishing eugenic laws.</a>
+        </div>
+        <div class='left-o width-3 height-6 show-while-playing'>
+          <button data-toggle-playback='true'> Stop Playback </button>
         </div>
 
 
       </li>
 
-      <li class='swipe-pane' data-background-video='sample_images/leaves-high.m4v' data-autoplay='true' data-video-loop='true'>
+      <li class='swipe-pane'>
       </li>
 
     </ul>

@@ -93,6 +93,20 @@
   opacity: 1;
 }
 
+.fade-in-left {
+  opacity: 0;
+  -webkit-transition: -webkit-transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+}
+.active .fade-in-left {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
 .fade-in-down {
   opacity: 0;
   -webkit-transition: -webkit-transform 1s, opacity 1s;
