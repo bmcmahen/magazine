@@ -112,8 +112,8 @@
     }
 
     ul.magazine-navigation {
-      width: 400px;
-      margin-left: -200px;
+      width: 470px;
+      margin-left: -235px;
       left: 50%;
     }
 
@@ -260,6 +260,30 @@
     z-index: 5;
   }
 
+  h5 {
+    font-family: helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1em;
+  }
+
+  blockquote {
+    border-left: 5px solid #ddd;
+    padding-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 25px;
+  }
+
+  .video-description {
+    line-height: 19px;
+    font-size: 14px;
+    padding: 15px;
+    font-family: helvetica, arial, sans-serif;
+    color: #888;
+    border-radius: 3px;
+    text-indent: 0;
+  }
+
   </style>
 
 
@@ -316,7 +340,7 @@
       <li class='swipe-pane'>
         <div class='left-0 width-12 height-12 move-down-more' style='background-image: url("sample_images/sterilization-act.jpg"); background-size: cover;'></div>
         <div class='left-0 width-3 height-2 top-0 caption fade-in-down'>
-          <div style='background: white; padding: 10px;'>
+          <div class='white-background' style='padding: 10px;'>
         Most large-scale institutionalization of "mental defectives" occurred in Alberta between 1918 and 1972. During this time, more than 2,800 Albertans were sterilized, starting with the introduction of Alberta's <em> Sexual Sterilization Act of 1928</em>.
 
         </div>
@@ -326,29 +350,26 @@
        </div>
      </li>
 
-      <li class='swipe-pane' style='overflow: visible;'>
-        <div class='left-0 height-12 width-12' style='overflow: hidden;'>
-          <div class='grid-container' id='background4'></div>
+     <li class='swipe-pane'>
+
+        <div class='left-0 top-4 width-8 height-8 fade-in-up' style='overflow: hidden;'>
+          <div class='grid-container' style='background: url("sample_images/RedDeerProvincialTrainingSchool_BoysWard1930_ProvincialArchivesAlberta.png"); background-size: cover;'></div>
         </div>
-         <div class='left-0 width-6 height-12'>
-           <div class='grid-container'>
-            <div class='fixed-block v-centered h-centered' style='margin-top: -290px;'>
-              <p> While institutionalization and sterilization were closely linked, eugenic ideals were not the sole motivation for removing disabled children from their homes and placing them in institutions. As Alberta became increasingly urbanized and industrialized, parents of children with developmental disabilities faced new challenges. Before industrialization, families were larger and more self-sufficient. As more people began to work outside the home in urban centres, parents were less able to rely on childcare support from family members and neighbours. In fact, more than half of the admission applications to the Red Deer <a href='/discover/institutions/map/517da50e9786fa0a73000001'>Provincial Training School</a> for "mental defectives" were filed by family members of the residents.  </p>
-            </div>
+        <div class='left-0 top-0 width-4 height-4 fade-in-right' style='background: url("sample_images/PonokaHospitalA11837_ProvincialArchivesAlberta.png"); background-size: cover;'></div>
+        <div class='left-4 top-0 width-4 height-4 fade-in-down' style='background: url("sample_images/OliverHospitalA5974_May1937_ProvincialArchivesAlberta.png"); background-size: cover;'></div>
+
+        <div class='left-8 width-4 height-12 white-background scroll'>
+          <div>
+             <p> While institutionalization and sterilization were closely linked, eugenic ideals were not the sole motivation for removing disabled children from their homes and placing them in institutions. As Alberta became increasingly urbanized and industrialized, parents of children with developmental disabilities faced new challenges. Before industrialization, families were larger and more self-sufficient. As more people began to work outside the home in urban centres, parents were less able to rely on childcare support from family members and neighbours. In fact, more than half of the admission applications to the Red Deer <a href='/discover/institutions/map/517da50e9786fa0a73000001'>Provincial Training School</a> for "mental defectives" were filed by family members of the residents.  </p>
+             <p> There are many accounts of overcrowding, poor sanitation and abuse within the walls of <a href='/discover/institutions/map/'>Alberta institutions</a>. Additionally, ethnic minorities, including Aboriginal children, were more likely to be institutionalized than children of British descent. Visits with family members were rare and parents were seldom able to monitor the quality of care their children received. People with disabilities often remained in institutions as adults, sometimes living away from the community for decades.  </p>
           </div>
-        </div>
-        <div class='left-6 width-6 height-12'>
-          <div class='grid-container'>
-            <div class='fixed-block v-centered h-centered' style='margin-top: -290px;'>
-              <p> There are many accounts of overcrowding, poor sanitation and abuse within the walls of <a href='/discover/institutions/map/'>Alberta institutions</a>. Additionally, ethnic minorities, including Aboriginal children, were more likely to be institutionalized than children of British descent. Visits with family members were rare and parents were seldom able to monitor the quality of care their children received. People with disabilities often remained in institutions as adults, sometimes living away from the community for decades.  </p>
-              <div class='directional-links'>
+            <div class='directional-links'>
                 <a href='#' class='next' data-link='previous'>Previous</a> <span class='divider'>|</span>
                 <a href='#' class='next' data-link='next'>Next </a>
               </div>
-            </div>
           </div>
-        </div>
       </li>
+
 
       <li class='swipe-pane' data-background-video='sample_images/leaves-high.m4v' data-autoplay='true' data-video-loop='true'>
         <div class='left-8 width-4 height-12 white-background no-padding scroll'>
@@ -392,11 +413,13 @@
       </li>
 
       <li class='swipe-pane' data-background-video='sample_images/leilani-preview.m4v' data-autoplay='true' data-video-loop='true'>
-        <div class='left-9 width-3 height-6' style='padding-right: 15px;'>
+        <div class='left-9 width-3 height-6 hide-while-playing' style='padding-right: 15px;'>
           <h3 class='fade-in-down'>Leilani Muir</h3>
           <p class='caption black-background fade-in-left'>Leilani Muir was the first person to file a successful law suit against the Alberta government for wrongful sterilization under the Sexual Sterilization Act of Alberta. Her case led to the initiation of several other class action suits against the province for wrongful sterilization.</p>
-          <a class='start-video cf fade-in-left' data-play-video='sample_images/leilani.mp4' data-popup-video='true'><i class='icon-play-circle'></i>Leilani Tells her story, including her account of being at the Michener Center.</a>
-
+          <a class='start-video cf fade-in-left' data-play-video='sample_images/leilani.mp4'><i class='icon-play-circle'></i>Leilani Tells her story, including her account of being at the Michener Center.</a>
+        </div>
+         <div class='left-o width-3 height-6 show-while-playing'>
+          <button data-toggle-playback='true'> Stop Playback </button>
         </div>
       </li>
 
@@ -415,7 +438,53 @@
 
       </li>
 
+       <li class='swipe-pane'>
+
+        <div class='left-4 top-0 width-8 height-8' style='overflow: hidden;'>
+          <div class='grid-container zoom-out' style='background: url("sample_images/residential-3.jpg"); background-size: cover;'></div>
+        </div>
+        <div class='left-4 top-8 width-4 height-4' style='background: url("sample_images/residential-2.jpg"); background-size: cover;'></div>
+        <div class='left-8 top-8 width-4 height-4' style='background: url("sample_images/residential-1.jpg"); background-size: cover;'></div>
+
+        <div class='left-0 width-4 height-12 white-background no-padding scroll'>
+          <h2> Residential Schools </h2>
+          <div class='padded'>
+
+            <p class='first'> <span class='drop-caps'>M</span>issionary-run schools for Aboriginal children were operating in what is now Eastern Canada as early as the 17th century.  By the beginning of the 19th century, a number of day schools existed, but in 1842 the Bagot Commisssion (intended to examine the efficiency of Aboriginal education) recommended that a change be made from day schools to residential schools. A residential, industrial work school was seen as a way to remove children from their parent's influence entirely, furthering the aim of assimilating Aboriginal children into 'mainstream' Canadian society. In the late 19th century, the government of Canada created a system of industrial schools for Aboriginal children, along with a series of boarding schools, and these ran as parallel systems. Many of Canada's churches (Anglican, Catholic, Methodist and Presbyterian) were interested and involved in Aboriginal education and in 1892 became equal partners with the Canadian government in the running of Aboriginal schools. The 'residential school system' that we know of today was created when the division between industrial schools and boarding schools was discarded in 1923. </p>
+           <h5>The Aims of the Residential School System</h5>
+           <p>The purpose of Aboriginal education in early Canadian history was to assimilate the Aboriginal generations entering them in to the mainstream Canadian population. In 1896, school curriculum included studies of ethics. As reported by the Royal Commission On Aboriginal Peoples,</p>
+           <blockquote>In the first year, the students were to be taught the "practice of cleanliness, obedience, respect, order, neatness", followed in subsequent years by "Right and wrong", "Independence. Self-respect", "Industry. Honesty. Thrift", and "Patriotism... Self-maintenance. Charity." In the final year, they were confronted by the "Evils of Indian Isolation", "Labour the Law of Life" and “Home and public duties."</blockquote>
+           <p>This policy reached its most coercive point when in 1920, Deputy Superintendent General of Indian Affairs Duncan Campbell Scott made attendance of residential school mandatory for Aboriginal children. He infamously stated:</p>
+           <blockquote>I want to get rid of the Indian problem. I do not think as a matter of fact, that this country ought to continuously protect a class of people who are able to stand alone... But after one hundred years, after being in close contact with civilization it is enervating to the individual or to a band to continue in that state of tutelage, when he or they are able to take their position as British citizens or Canadian citizens, to support themselves, and stand alone. That has been the whole purpose of Indian education and advancement since the earliest times...
+  ... Our object is to continue until there is not a single Indian in Canada that has not been absorbed into the body politic, and there is no Indian question, and no Indian Department. </blockquote>
+
+          </div>
+            <div class='directional-links'>
+                <a href='#' class='next' data-link='previous'>Previous</a> <span class='divider'>|</span>
+                <a href='#' class='next' data-link='next'>Next </a>
+              </div>
+          </div>
+      </li>
+
       <li class='swipe-pane'>
+        <div class='left-0 width-12 height-12 zoom-out' style='background-image: url("sample_images/alert-bay.jpg"); background-size: cover;'></div>
+         <div class='left-8 width-4 height-12 white-background scroll'>
+            <h5 style='margin-top: 0px;'>The End of the Residential School System</h5>
+            <p>The middle of the 20th century saw the Canadian government making efforts to integrate the Aboriginal schools and curriculum with non-Aboriginal systems, and in 1969 their partnership with the churches ended. By 1986, all residential schools had either been closed or transferred to Aboriginal control.</p>
+            <p>Evaluations of the conditions of residential schools have now informed us that many schools had an extremely high mortality rate and housed disease as well as students, particularly tuberculosis. In addition to evidence of systematic neglect, many Aboriginal residential school graduates have disclosed stories of abuse, resulting in inquiries such as the Truth and Reconciliation Commission of Canada. Apologies by the Government of Canada and by many of the churches involved in the history of residential schools have been made, but the full effects of the residential school system on Canada and on Aboriginal peoples are still unfolding.</p>
+             <div class='directional-links'>
+              <a href='#' class='next' data-link='previous'>Previous</a> <span class='divider'>|</span>
+              <a href='#' class='next' data-link='next'>Next </a>
+            </div>
+        </div>
+      </li>
+
+      <li class='swipe-pane'>
+        <h2>Questions and Activities</h2>
+      </li>
+
+      <li class='swipe-pane'>
+        <h2> Further Resources </h2>
       </li>
 
     </ul>

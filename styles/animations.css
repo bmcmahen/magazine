@@ -77,7 +77,7 @@
 }
 
 .active .move-down-more {
-  background-position-y: -900;
+  background-position-y: -1200;
 }
 
 .fade-in-right {
@@ -115,6 +115,19 @@
   transform: translateY(-50%);
 }
 .active .fade-in-down {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.fade-in-up {
+  opacity: 0;
+  -webkit-transition: -webkit-transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+}
+.active .fade-in-up {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   opacity: 1;
