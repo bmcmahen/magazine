@@ -6,16 +6,17 @@
   "keywords": [],
   "dependencies": {
     "component/swipe": "*",
-    "component/events": "*",
+    "component/events": "1.0.4",
     "component/css": "*",
     "component/each": "*",
     "component/classes": "*",
     "component/map": "*",
     "anthonyshort/emitter-manager": "*",
     "yields/k": "*",
-    "component/emitter": "*",
+    "component/emitter": "1.1.0",
     "eugenicsarchivesca/background-video": "*",
-    "bmcmahen/popup-video": "*"
+    "bmcmahen/popup-video": "*",
+    "bmcmahen/cycle": "*"
   },
   "development": {},
   "license": "MIT",

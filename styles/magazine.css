@@ -45,4 +45,9 @@ ul.swipe li.swipe-pane {
   float: left;
   height: 100%;
   position: relative;
+  visibility: hidden;
+}
+
+ul.swipe li.swipe-pane.visible {
+  visibility: visible;
 }

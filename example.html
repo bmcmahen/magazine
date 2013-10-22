@@ -30,7 +30,7 @@
       background-size: cover;
     }
 
-    h2 {
+    #magazine h2 {
       color: rgb(81, 83, 83);
       font-family: 'helvetica', arial, sans-serif;
       font-size: 25px;
@@ -198,7 +198,7 @@
       display: block;
     }
 
-    h3 {
+    #magazine h3 {
       color: white;
       margin-top: 30px;
       margin-bottom: 10px;
@@ -260,7 +260,7 @@
     z-index: 5;
   }
 
-  h5 {
+  #magazine h5 {
     font-family: helvetica, arial, sans-serif;
     text-transform: uppercase;
     font-size: 1.1em;
@@ -284,12 +284,77 @@
     text-indent: 0;
   }
 
+  #background5 {
+    background-image: url('sample_images/inst9.jpg');
+    background-size: cover;
+  }
+
+  h1 {
+    color: white;
+    font: 50px helvetica;
+    font-weight: 900;
+  }
+
+  .table-of-contents {
+list-style: none;
+padding: 0;
+}
+
+.table-of-contents li a {
+  font-size: 20px;
+  font-family: helvetica;
+  color: white;
+  font-weight: 800;
+  padding: 2px;
+  line-height: 35px;
+  text-decoration: none;
+}
+
+.begin {
+border: 3px solid rgba(255, 245, 0, 1);
+font-size: 30px;
+background: black;
+padding: 3px;
+padding-left: 7px;
+padding-right: 7px;
+color: white;
+text-decoration: none;
+font-family: helvetica;
+text-transform: uppercase;
+font-weight: bold;
+}
+
   </style>
 
 
 <div id='magazine'>
   <div id='magazine-content'>
     <ul class='swipe'>
+      <li class='swipe-pane'>
+        <div class='left-0 width-12 height-12 zoom-out-extra' id='background5'></div>
+       <div class='left-9 width-3 height-1 caption fade-in-down' style='text-align: right;'>
+        Lorem ipsum Eu laborum enim cupidatat id incididunt deserunt incididunt irure quis quis sed id nulla ad non culpa ea aute in.
+       </div>
+       <div class='left-3 width-8 height-3 top-1 zoom-in'>
+        <h1>Being in an Institution</h1>
+       </div>
+       <div class='left-4 width-8 height-2 top-3 zoom-in'>
+        <ul class='table-of-contents'>
+          <li>
+            <a href='#'>Roots of Institutionalization</a>
+          </li>
+          <li>
+            <a href='#'>Personal Histories</a>
+          </li>
+          <li>
+            <a href='#'>Residential Schools</a>
+          </li>
+        </ul>
+       </div>
+       <div class='left-9 width-3 height-2 top-9 zoom-in'>
+          <a href='#' class='begin'> Start </a>
+       </div>
+      </li>
 
       <li class='swipe-pane'>
         <div class='left-0 width-12 height-12 zoom-in' id='background2'></div>
