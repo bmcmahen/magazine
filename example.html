@@ -289,39 +289,46 @@
     background-size: cover;
   }
 
-  h1 {
-    color: white;
-    font: 50px helvetica;
-    font-weight: 900;
-  }
-
+h1 {
+  color: whitesmoke;
+  font: 50px helvetica;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
   .table-of-contents {
 list-style: none;
 padding: 0;
 }
 
 .table-of-contents li a {
-  font-size: 20px;
+  font-size: 25px;
   font-family: helvetica;
   color: white;
-  font-weight: 800;
-  padding: 2px;
-  line-height: 35px;
+  font-weight: 100;
+  line-height: 40px;
+  text-transform: lowercase;
   text-decoration: none;
+  text-shadow: 1px 1px 1px black;
 }
 
 .begin {
-border: 3px solid rgba(255, 245, 0, 1);
-font-size: 30px;
-background: black;
-padding: 3px;
-padding-left: 7px;
-padding-right: 7px;
-color: white;
-text-decoration: none;
-font-family: helvetica;
-text-transform: uppercase;
-font-weight: bold;
+  border: 3px solid rgba(255, 245, 0, 1);
+  font-size: 30px;
+  background: black;
+  background: rgba(0,0,0,0.3);
+  padding: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+  color: rgba(255, 245, 0, 1);
+  text-decoration: none;
+  font-family: helvetica;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+i {
+  padding-right: 10px;
 }
 
   </style>
@@ -332,28 +339,37 @@ font-weight: bold;
     <ul class='swipe'>
       <li class='swipe-pane'>
         <div class='left-0 width-12 height-12 zoom-out-extra' id='background5'></div>
-       <div class='left-9 width-3 height-1 caption fade-in-down' style='text-align: right;'>
-        Lorem ipsum Eu laborum enim cupidatat id incididunt deserunt incididunt irure quis quis sed id nulla ad non culpa ea aute in.
-       </div>
-       <div class='left-3 width-8 height-3 top-1 zoom-in'>
-        <h1>Being in an Institution</h1>
-       </div>
-       <div class='left-4 width-8 height-2 top-3 zoom-in'>
+        <div class='left-1 width-8 height-2'>
+           <h1>Being in an Institution</h1>
+        </div>
+
+
+       <div class='left-1 width-12 height-12 top-2'>
         <ul class='table-of-contents'>
           <li>
-            <a href='#'>Roots of Institutionalization</a>
+            <a href='#' data-link='2'><i class="icon-angle-right"></i>Roots of Institutionalization</a>
           </li>
           <li>
-            <a href='#'>Personal Histories</a>
+            <a href='#' data-link='6'><i class="icon-angle-right"></i>Personal Histories</a>
           </li>
           <li>
-            <a href='#'>Residential Schools</a>
+            <a href='#' data-link='11'><i class="icon-angle-right"></i>Residential Schools</a>
           </li>
+           <li>
+            <a href='#' data-link='11'><i class="icon-angle-right"></i>Activities & Questions</a>
+          </li>
+           <li>
+            <a href='#' data-link='11'><i class="icon-angle-right"></i>Resources</a>
+          </li>
+
         </ul>
        </div>
-       <div class='left-9 width-3 height-2 top-9 zoom-in'>
-          <a href='#' class='begin'> Start </a>
+       <div class='left-2 width-3 height-2 top-9'>
+          <a href='#' class='begin' data-link='next'> Start here </a>
        </div>
+      </li>
+
+        <li class='swipe-pane' data-background-video='sample_images/glen-short.m4v' data-autoplay='true' data-video-loop='true'>
       </li>
 
       <li class='swipe-pane'>
@@ -562,6 +578,9 @@ font-weight: bold;
 <script>
 var Magazine = require('magazine');
 var tour = new Magazine(document.getElementById('magazine'));
+var video = require('magazine/video');
+console.log(video);
+tour.use(video);
 
 </script>
 
