@@ -2,7 +2,7 @@
   "name": "magazine",
   "repo": "bmcmahen/magazine",
   "description": "create a horizontal, swipeable magazine layout",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [],
   "dependencies": {
     "component/swipe": "*",
@@ -13,7 +13,8 @@
     "component/map": "*",
     "yields/k": "*",
     "component/emitter": "1.1.0",
-    "bmcmahen/cycle": "*"
+    "bmcmahen/cycle": "*",
+    "timoxley/next-tick" : "*"
   },
   "development": {},
   "license": "MIT",
